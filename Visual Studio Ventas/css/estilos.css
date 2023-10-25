@@ -66,7 +66,7 @@
 
     /*  Menú  */
     #menu-container {
-        background-color: #eb9e6e;
+        background-color: #eb9e6e ;
         text-align: left;
     }
 
@@ -269,6 +269,11 @@ a{
 
 }
 
+.mapa{
+    text-align: center;
+    margin:0 auto;
+}
+
 
 .container a:hover {
     box-shadow: 0 0.2rem 0.6rem rgba(5, 5, 5, 0.3);
@@ -284,15 +289,17 @@ a{
 }
 
 .container a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .container a p {
     font-size: 2.3em;
     position: relative;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     right: 0;
+    font-style: oblique;
+    
 
 }
 

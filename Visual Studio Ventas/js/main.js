@@ -18,10 +18,6 @@ let cad = `
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
-    <!-- <form class="form-nav" action="">
-            <input type="text" placeholder="Busque su ropa">
-            <button type="button"><i class="fa-solid fa-arrow-right buscar"></i></button>
-        </form> -->
 </div>
 <hr>
                          

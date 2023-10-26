@@ -1,5 +1,5 @@
 let cad = `   
-            <a href="../index.html"><img class="logo" src="../img/tienda.png" alt="logo"></a>
+            <a href="../index.html"><img class="logo" src="./img/tienda.png" alt="logo"></a>
 
             <h1>Visual Studio Ventas Online</h1>
 
@@ -19,15 +19,7 @@ let cad = `
                         <li><a href="html/contacto.html">CONTACTO</a></li>
                     </ul>
                 </nav>
-                <!-- <form class="form-nav" action="">
-                <input type="text" placeholder="Busque su ropa">
-             <button type="button"><i class="fa-solid fa-arrow-right buscar"></i></button>
-                </form> -->
-            </div>
-                 
-            
-            
-            
+            </div>            
             `
 
 document.querySelector("header").innerHTML = cad

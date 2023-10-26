@@ -10,10 +10,11 @@
 /*  Diseño Responsive "Mobile First */
 /*  CSS para celular  */
 @media all and (min-width:320px)  {
-
+ 
     /*  HEADER  */
     .logo {
         width: 50px;
+        margin-left: 7px;
         float: inline-start;
     }
 
@@ -127,6 +128,18 @@
     }
 
     /*FIN HEADER*/
+
+    iframe {
+        width: 90% !important;
+    }
+    h3{
+        text-align: center;
+    }
+
+    h3 a {
+        height: 50%;
+    }
+    
 }
 
 /*  CSS Pantalla 480px y superior (IPads, Tablets)  */
@@ -162,8 +175,9 @@
     }
 
     li {
-        width: 16.5%;
+        width: 17.5%;
         text-align: center;
+        vertical-align: center;
     }
 
 
@@ -171,11 +185,13 @@
         text-decoration: none;
         color: rgb(5, 5, 5);
         width: 80%;
-
-
-
+        height: 100%;
     }
 
+
+    iframe {
+        width: 400px !important;
+    }
 }
 
 
@@ -228,8 +244,8 @@ h1 {
 
 /*MAIN*/
 main {
-    background-color: #e0d3b8;
     background: linear-gradient(-45deg, #f5e7bd, #eeda9d);
+    padding-bottom: 50px;
 }
 
 h2 {

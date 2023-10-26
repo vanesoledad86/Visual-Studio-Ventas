@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Ventas</title>
+    <link rel="shortcut icon" href="../img/bolsa-de-la-compra.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/tarjetas.css">
+    <script>
+        function validarFormulario() {
+            var intereses = document.querySelectorAll('input[name="intereses[]"]:checked');
+            if (intereses.length === 0) {
+                alert("Por favor, seleccione al menos un interés.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <h3><a href="#sucursales">VISITA NUESTRAS SUCURSALES</a></h3>
+        <h2>CONTACTO</h2>
+
+        <form action="../formulario.php" method="POST" class="form-nav1" target="">
+
+            <fieldset>
+                <legend> <u>Datos personales </u> </legend> <br>
+                <label for="nombre">NOMBRE</label><br>
+                <input size="40" type="text" name="nombre" id="nombre" required><br> <br>
+                <label for="apellido">APELLIDO</label><br>
+                <input size="40" type="text" name="apellido" id="apellido" required><br> <br>
+                <label for="email">Email</label><br>
+                <input size="40" type="email" name="email" id="email" required><br> <br>
+                <label for="genero">GENERO:</label>
+                <input type="radio" name="genero" id="genero" value="H" required>Hombre
+                <input type="radio" name="genero" id="genero" value="M">Mujer
+                <input type="radio" name="genero" id="genero" value="O">Otro<br><br>
+                <label for="fecha">FECHA DE NACIMIENTO</label><br>
+                <input type="date" name="fecha" id="fecha" required><br><br>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="intereses">INTERESES</label><br>
+                    <input type="checkbox" name="intereses[]" id="interes1" value="Indumentaria femenina">Indumentaria
+                    femenina
+                    <input type="checkbox" name="intereses[]" id="interes2" value="Indumentaria masculina">Indumentaria
+                    masculina
+                    <input type="checkbox" name="intereses[]" id="interes3" value="Indumentaria ninos">Indumentaria
+                    niños
+                    <input type="checkbox" name="intereses[]" id="interes4" value="Accesorios">Accesorios <br><br>
+                </p>
+            </fieldset>
+            <fieldset>
+                <label for="comentario">COMENTARIOS</label><br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Comente aqui"
+                    required></textarea>
+                <br> <br>
+                <input type="submit" value="Enviar"><br><br>
+            </fieldset>
+
+        </form>
+    </main>
+    <main>
+        <h2>SUCURSALES</h2>
+
+
+        <div class="mapa">
+
+            <p> <u>Encontranos en nuestra Sucursal de ONCE:</u> <b>Av. Pueyrredon 279 - CABA o en FLORES: Av. Nazca 225
+                    - CABA </b></p>
+            <br>
+            <a name="sucursales"></a>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.922068620508!2d-58.40897991114504!3d-34.60613209999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf281e7455d%3A0x70d932a00c49a7db!2sPunto%20Once!5e0!3m2!1ses-419!2sar!4v1697142188916!5m2!1ses-419!2sar"
+                width="500" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d205.19157210487552!2d-58.46838175253561!3d-34.62779377625207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b20f637c8f%3A0x5de9fba818f73127!2sFlores!5e0!3m2!1ses-419!2sar!4v1697148909425!5m2!1ses-419!2sar"
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/cargarropa.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
